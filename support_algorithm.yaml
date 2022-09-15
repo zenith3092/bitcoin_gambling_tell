@@ -1,0 +1,19 @@
+knn: KNeighborsClassifier
+svms: SVC
+lsvc: LinearSVC
+br: BayesianRidge
+gls: LinearRegression
+logir: LogisticRegression
+# gpr: GaussianProcessRegressor
+pla: Perceptron
+sgd: SGDClassifier
+dt3: DecisionTreeClassifier3
+dt4: DecisionTreeClassifier4
+dt5: DecisionTreeClassifier5
+gauNB: GaussianNB
+berNB: BernoulliNB
+comNB: ComplementNB
+mulNB: MultinomialNB
+# cateNB: CategoricalNB
+
+

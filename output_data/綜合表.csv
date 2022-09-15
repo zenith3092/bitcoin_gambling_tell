@@ -1,0 +1,16 @@
+Train,accuracy,test,precision,recall,fscore
+KNeighborsClassifier,93.1,87.71,79.53,79.98,79.65
+SVC,63.74,62.84,29.33,33.42,26.2
+LinearSVC,82.94,83.72,76.32,67.27,69.76
+BayesianRidge,80.43,-46.07,46.89,34.6,29.1
+LinearRegression,80.53,-70.21,40.81,34.22,28.36
+LogisticRegression,82.98,82.22,74.26,75.36,72.71
+Perceptron,69.48,66.83,36.52,49.51,41.87
+SGDClassifier,93.4,93.21,87.64,89.26,88.14
+DecisionTreeClassifier3,91.0,90.01,83.36,84.47,82.41
+DecisionTreeClassifier4,93.7,92.51,86.34,87.06,86.59
+DecisionTreeClassifier5,95.07,93.61,88.36,88.5,88.43
+GaussianNB,44.11,45.95,50.12,47.58,37.66
+BernoulliNB,70.21,69.03,60.65,65.92,61.09
+ComplementNB,72.87,71.23,69.07,58.47,50.71
+MultinomialNB,79.94,80.42,61.84,63.22,61.31
