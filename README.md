@@ -36,7 +36,7 @@ If not, pleasw insert any other value except "y".
 ### Step 4 :
 You will see some images and csv files created.
 
-## How do we create feature?
+## How do we create features?
 ### Step 1 : Prepare classified tx ID data
 classify_tx_data.py => get_tx_data.py => get_tx_info.py
 
