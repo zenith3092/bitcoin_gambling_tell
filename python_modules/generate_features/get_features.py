@@ -98,6 +98,14 @@ address_data_dict = {'address':[],
              'n_join_huge':[],
              'n_join_pr80':[]} # >10
 
+def count_fee_ratio_num_pr80(tx_size, tx_fee_to_in):
+    count=0
+    for num in range(len(tx_size)):
+        if tx_size[num] < 10:
+            if tx_fee_to_in[num] > fee_in_pr80:
+                count += 1
+    return count
+
 def sign_label(feature):
     if feature >= 0:
         return 0
@@ -226,6 +234,7 @@ def add_data(address):
         am_fre_ttl = (ttl_am_ttl / time_range_ttl) if time_range_ttl != 0 else ttl_am_ttl
 
         max_fee_to_in = abs(tx_fee_to_in.max())
+        # n_pr80_fee_to_in = count_fee_ratio_num_pr80(tx_size, tx_fee_to_in)
         n_pr80_fee_to_in = np.count_nonzero( tx_fee_to_in < fee_in_pr80)
         n_join_pr80_am = np.count_nonzero( tx_amount < ttl_am_pr80)
         n_in_to_out_ratio = (n_in / n_out) if n_out != 0 else 0

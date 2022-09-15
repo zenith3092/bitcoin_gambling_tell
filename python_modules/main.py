@@ -16,14 +16,14 @@ project = ML_SET(Xdata, Ydata)
 flag = 1
 while flag != 0:
     # # Initialize algorithms
-    input_algorithms = input('\nPlease insert the algorithms you want to use:\n')
+    input_algorithms = input('\nPlease insert the algorithms you want to use:(hint:Insert 0 to exit)\n')
     input_algorithms = input_algorithms.split(',')
-
-    input_predict = input('Do you want to predict? (y / other value)')
 
     if input_algorithms == ['0']:
         break
-
+    else:
+        input_predict = input('Do you want to predict? (y / other value)\n')
+    
     act = project.activate(input_algorithms)
     print(act)
 
