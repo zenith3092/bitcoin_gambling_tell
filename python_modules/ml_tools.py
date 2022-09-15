@@ -343,37 +343,3 @@ class ML_ACT(ML_SET):
         
         self.predict_result = pd.DataFrame(self.Y_predict_p)
         self.predict_result.rename( columns={0: '%s_predict_result'%(self.algorithm)}, inplace=True)
-    
-
-
-    # def merge_predict(self, method_list):
-    #     if ( len(method_list) == 1 ) and ( method_list[0]=='all' ):
-    #         merge_list = []
-    #         for method in self.used_method:
-    #             merge_list.append(self.__dict__[method].predict_result)
-    #         self.merged_predict_result_df = pd.concat(merge_list, axis=0)
-
-    #     elif set(method_list).issubset(self.used_method):
-    #         merge_list = []
-    #         for method in method_list:
-    #             merge_list.append(self.__dict__[method].predict_result)
-    #             self.merged_predict_result_df = pd.concat(merge_list, axis=0)
-            
-    #     else:
-    #         msg = ''
-    #         return msg
-    
-    # def remove_predict(self, method_list):
-    #     if ( len(method_list) == 1 ) and ( method_list[0]=='all' ):
-    #         self.merged_predict_result_df = None
-
-    #     elif set(method_list).issubset(self.used_method):
-    #         for method in method_list:
-    #             del self.merged_predict_result_df.loc['Train'==''] # import
-            
-    #     else:
-    #         msg = ''
-    #         return msg
-
-    # def export_predict(self):
-    #     self.merged_predict_result_df.to_csv('../output_data/機台預測結果.csv',index=False)
