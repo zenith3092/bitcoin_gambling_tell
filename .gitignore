@@ -129,3 +129,9 @@ dmypy.json
 .pyre/
 
 .DS_Store
+address_classified.json
+address_feature.csv
+sheet3.csv
+tx_info.json
+tx_classified.json
+tx_data.json

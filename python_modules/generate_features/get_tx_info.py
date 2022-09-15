@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+# Author: Xianglin Wu (xianglin3092@gmail.com)
 # Performance: 0.51 sec
 # This module is to put tx_data in the same list so that we can get the statistic about tx_data easily.
 

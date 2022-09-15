@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+# Author: Xianglin Wu (xianglin3092@gmail.com)
 # performance 13 min 55 sec
 # This module is to classify sheet1 data into two kinds.
 

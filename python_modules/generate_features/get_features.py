@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+# Author: Xianglin Wu (xianglin3092@gmail.com)
 # performance 5 sec
 # This module is to create features of all the address
 

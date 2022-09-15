@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+# Author: Xianglin Wu (xianglin3092@gmail.com)
 # Performance 0.11 sec
 # This module is to merge the tag from sheet2 into sheet3
 

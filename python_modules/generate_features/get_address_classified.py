@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+# Author: Xianglin Wu (xianglin3092@gmail.com)
 # Performance: 25 min 51 sec
 # This module is to clasify sheet1 data by address.
 
