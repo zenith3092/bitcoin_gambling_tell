@@ -38,9 +38,9 @@ You will see some images and csv files created.
 
 ## How do we create feature?
 ### Step 1 Prepare classified tx ID data
-classify_tx_data.py > get_tx_data.py > get_tx_info.py
+classify_tx_data.py => get_tx_data.py => get_tx_info.py
 ### Step 2 Prepare classified address data
-get_address_classfied.py > get_features
+get_address_classfied.py => get_features
 ### Step 3 merge sheet2 and sheet3 (tag the address)
 merge_data.py
 
