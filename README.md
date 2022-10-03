@@ -1,6 +1,6 @@
-# bitcoin_gambing_predict
+# bitcoin_gambling_predict
 ## Introduction
-This is a simple package to get the result of each algorithm.
+Someone may launder money through bitcoin gambling.  This project is to predict which addresses are gambling accounts. Users can refer to the results after predicting as the protect themselves from joining money laundering indirectly.
 
 ## Environment
 Python Versrion : 3.9+
@@ -38,6 +38,12 @@ If not, pleasw insert any other value except "y".
 
 ### Step 4 :
 You will see some images and csv files created.
+
+### Result :
+
+![](https://i.imgur.com/KYvNxbw.png)
+
+#### The most accurate algorithm is Decision Tree Classifier with depth 5.
 
 ## How do we create features?
 ### Step 1 : Prepare classified tx ID data

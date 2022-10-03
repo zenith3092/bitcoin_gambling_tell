@@ -42,7 +42,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import pickle
-from Utilis import read_yaml
+from utilis import read_yaml
 
 class ML_SET:
     def __init__(self, Xdata, Ydata, predictX=None, predict_data=None):
