@@ -1,6 +1,10 @@
 # bitcoin_gambling_predict
 ## Introduction
-Someone may launder money through bitcoin gambling.  This project is to predict which addresses are gambling accounts. Users can refer to the results after predicting as the protect themselves from joining money laundering indirectly.
+Someone may launder money through bitcoin gambling.  This project is to predict which addresses are gambling accounts.
+
+We divided these accounts into three kinds: pool, exchange, and gamebling.
+
+Users can refer to the results after predicting as the protect themselves from joining money laundering indirectly.
 
 ## Environment
 Python Versrion : 3.9+
@@ -43,7 +47,8 @@ You will see some images and csv files created.
 
 ![](https://i.imgur.com/KYvNxbw.png)
 
-#### The most accurate algorithm is Decision Tree Classifier with depth 5.
+#### * The most accurate algorithm is Decision Tree Classifier with depth 5.
+#### * The total samples of training data are 3336.
 
 ## How do we create features?
 ### Step 1 : Prepare classified tx ID data
@@ -61,6 +66,24 @@ get_address_classfied.py
 ### Step 3 : merge sheet2 and sheet3 (tag the address)
 merge_data.py
 
+This process takes about 40 minutes to ETL and generate features data. (tested in M1pro environment)
+
+## Special features we create:
+
+### fee to in ratio
+
+Fee to in ratio is fee divided by total IN amount in a transaction. And fee is the total IN amount minus total OUT amount.
+
+![](https://i.imgur.com/HHgW83V.png)
+
+### 1. max_fee_to_in
+
+Each account may join in serveral transactions, this feature (column) collect the maximun fee to in ratio among these transaction for each account.
+
+#### 2. n_pr80_fee_to_in
+
+This feature collect the 80% percentile value (fee to in ratio) among the transactions where a certain account join.
+
 ## Reference
 ### support_algorithm.yaml
 You can look up the keyword of algorithm in this file.
@@ -69,5 +92,4 @@ Beside, if you want to stop some algorithms from executing, comment out them in 
 
 ### column explanation.txt
 You can look up the column explanation in this file.
-
 
